@@ -22,6 +22,7 @@
 		65B2A93D1BD0385900CF8AA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B2A9401BD0385900CF8AA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65B2A9421BD0385900CF8AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65CA17641BD13F06007B5BA4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 				65B2A93D1BD0385900CF8AA6 /* Assets.xcassets */,
 				65B2A93F1BD0385900CF8AA6 /* LaunchScreen.storyboard */,
 				65B2A9421BD0385900CF8AA6 /* Info.plist */,
+				65CA17641BD13F06007B5BA4 /* MyPlayground.playground */,
 			);
 			path = "curso-swift-alura";
 			sourceTree = "<group>";
@@ -283,6 +285,7 @@
 				65B2A9471BD0385900CF8AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
