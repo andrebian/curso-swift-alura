@@ -2,32 +2,21 @@
 
 import UIKit
 
-let calories: Array<Double> = [50.5, 100, 300, 500]
-let items: Array<Double> = []
 
-
-for var i = 0; i < calories.count; i++ {
-    print(calories[i])
-}
-
-for i in 0...3 {
-    print(calories[i])
-}
-
-for i in calories {
-    print((i))
-}
-
-
-func allCalories(calories: Array<Double>) -> Double {
+class Meal {
     
-    var total: Double = 0
+    var name: String
+    var happiness: Int
     
-    for c in calories {
-        total += c
+    init(name: String, happiness: Int) {
+        self.name = name
+        self.happiness = happiness
     }
     
-    return total
 }
 
-allCalories([100, 500, 300, 10.5])
+
+var brownie = Meal(name: "Eggplant brownie", happiness: 5)
+
+
+
