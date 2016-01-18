@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65771B811BDA8CEF00128EA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65771B801BDA8CEF00128EA3 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		6580BEE01BD558DE006DDD26 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580BEDF1BD558DE006DDD26 /* Meal.swift */; settings = {ASSET_TAGS = (); }; };
-		6580BEE21BD558FB006DDD26 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580BEE11BD558FB006DDD26 /* Item.swift */; settings = {ASSET_TAGS = (); }; };
+		65771B811BDA8CEF00128EA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65771B801BDA8CEF00128EA3 /* ViewController.swift */; };
+		6580BEE01BD558DE006DDD26 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580BEDF1BD558DE006DDD26 /* Meal.swift */; };
+		6580BEE21BD558FB006DDD26 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580BEE11BD558FB006DDD26 /* Item.swift */; };
 		65B2A9371BD0385900CF8AA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B2A9361BD0385900CF8AA6 /* AppDelegate.swift */; };
 		65B2A93C1BD0385900CF8AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B2A93A1BD0385900CF8AA6 /* Main.storyboard */; };
 		65B2A93E1BD0385900CF8AA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B2A93D1BD0385900CF8AA6 /* Assets.xcassets */; };
@@ -51,7 +51,6 @@
 		65771B7F1BDA8CD400128EA3 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				65B2A93A1BD0385900CF8AA6 /* Main.storyboard */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -84,6 +83,7 @@
 		65B2A9351BD0385900CF8AA6 /* curso-swift-alura */ = {
 			isa = PBXGroup;
 			children = (
+				65B2A93A1BD0385900CF8AA6 /* Main.storyboard */,
 				65771B7E1BDA8CD400128EA3 /* viewcontrollers */,
 				65771B7F1BDA8CD400128EA3 /* views */,
 				6580BEDE1BD558CD006DDD26 /* models */,
@@ -182,7 +182,6 @@
 				65B2A93B1BD0385900CF8AA6 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		65B2A93F1BD0385900CF8AA6 /* LaunchScreen.storyboard */ = {

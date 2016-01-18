@@ -16,17 +16,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    @IBAction func add() {
         
-        if nameField == nil || happinessField == nil {
+        let saveButton = UIBarButtonItem(title: NSLocalizedString("Confirm", comment: ""), style: .Plain, target: self, action: Selector("add"))
+        
+        let clearButton = UIBarButtonItem(title: NSLocalizedString("Clear", comment: ""), style: .Plain, target: self, action: Selector("clear"))
+        
+        self.navigationItem.rightBarButtonItem = saveButton
+        self.navigationItem.leftBarButtonItem = clearButton
+    }
+    
+    func clear() {
+        nameField.text = ""
+        happinessField.text = ""
+        
+        nameField.resignFirstResponder()
+        happinessField.resignFirstResponder()
+    }
+    
+    
+    func add() {
+        
+        if nameField.text == nil || happinessField.text == nil {
             return
         }
         
