@@ -14,6 +14,7 @@
 		65B2A93C1BD0385900CF8AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B2A93A1BD0385900CF8AA6 /* Main.storyboard */; };
 		65B2A93E1BD0385900CF8AA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B2A93D1BD0385900CF8AA6 /* Assets.xcassets */; };
 		65B2A9411BD0385900CF8AA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B2A93F1BD0385900CF8AA6 /* LaunchScreen.storyboard */; };
+		6825FD221C4DA82300FC37CD /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6825FD211C4DA82300FC37CD /* MealsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		65B2A9401BD0385900CF8AA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65B2A9421BD0385900CF8AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65CA17641BD13F06007B5BA4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		6825FD211C4DA82300FC37CD /* MealsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				65771B801BDA8CEF00128EA3 /* ViewController.swift */,
+				6825FD211C4DA82300FC37CD /* MealsTableViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6825FD221C4DA82300FC37CD /* MealsTableViewController.swift in Sources */,
 				65771B811BDA8CEF00128EA3 /* ViewController.swift in Sources */,
 				6580BEE21BD558FB006DDD26 /* Item.swift in Sources */,
 				6580BEE01BD558DE006DDD26 /* Meal.swift in Sources */,
