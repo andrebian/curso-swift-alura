@@ -10,7 +10,7 @@ import UIKit
 
 class MealsTableViewController: UITableViewController {
     
-    let meals = [Meal(name: "Bolinho", happiness: 5), Meal(name: "Sopa", happiness: 3)]
+    var meals = [Meal(name: "Bolinho", happiness: 5), Meal(name: "Sopa", happiness: 3)]
     let cellIdentifier: String = "TextViewCell"
 
     override func viewDidLoad() {
@@ -52,6 +52,11 @@ class MealsTableViewController: UITableViewController {
         return cell
     }
     
+    func add(meal: Meal) {
+        meals.append(meal)
+        self.tableView.reloadData()
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -88,14 +93,14 @@ class MealsTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.destinationViewController is ViewController {
+            let destinationVC = segue.destinationViewController as! ViewController
+            destinationVC.delegate = self
+        }
     }
-    */
 
 }

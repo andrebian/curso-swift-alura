@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet var nameField: UITextField!
     @IBOutlet var happinessField: UITextField!
+    var delegate: MealsTableViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,20 +20,8 @@ class ViewController: UIViewController {
         
         let saveButton = UIBarButtonItem(title: NSLocalizedString("Confirm", comment: ""), style: .Plain, target: self, action: Selector("add"))
         
-        let clearButton = UIBarButtonItem(title: NSLocalizedString("Clear", comment: ""), style: .Plain, target: self, action: Selector("clear"))
-        
         self.navigationItem.rightBarButtonItem = saveButton
-        self.navigationItem.leftBarButtonItem = clearButton
     }
-    
-    func clear() {
-        nameField.text = ""
-        happinessField.text = ""
-        
-        nameField.resignFirstResponder()
-        happinessField.resignFirstResponder()
-    }
-    
     
     func add() {
         
@@ -50,6 +39,15 @@ class ViewController: UIViewController {
         let meal: Meal = Meal(name: name, happiness: happiness!)
         
         print("eaten: name \(meal.name) happiness \(meal.happiness)")
+        
+        if delegate == nil {
+            return
+        }
+        delegate!.add(meal)
+        
+        if let navigation = self.navigationController {
+            navigation.popViewControllerAnimated(true)
+        }
     }
 
 

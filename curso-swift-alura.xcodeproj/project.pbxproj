@@ -45,8 +45,8 @@
 		65771B7E1BDA8CD400128EA3 /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
-				65771B801BDA8CEF00128EA3 /* ViewController.swift */,
 				6825FD211C4DA82300FC37CD /* MealsTableViewController.swift */,
+				65771B801BDA8CEF00128EA3 /* ViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
