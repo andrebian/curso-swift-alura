@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MealsTableViewController: UITableViewController {
+class MealsTableViewController: UITableViewController, AddMealDelegate {
     
     var meals = [Meal(name: "Bolinho", happiness: 5), Meal(name: "Sopa", happiness: 3)]
     let cellIdentifier: String = "TextViewCell"
